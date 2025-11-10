@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Site basique - Exemple</title>
+</head>
+<body>
+  <header>
+    <h1>Mon site basique</h1>
+    <p>Un exemple de site réalisé uniquement avec du HTML.</p>
+    <nav>
+      <a href="#accueil">Accueil</a> |
+      <a href="#apropos">À propos</a> |
+      <a href="#services">Services</a> |
+      <a href="#galerie">Galerie</a> |
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="accueil">
+      <h2>Accueil</h2>
+      <p>Bienvenue sur ce site simple construit uniquement en HTML. Utilisez la navigation pour explorer les sections.</p>
+    </section>
+
+    <section id="apropos">
+      <h2>À propos</h2>
+      <p>Ce site sert d'exemple minimaliste : structure sémantique, navigation par ancres et contenu statique.</p>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <ul>
+        <li>Conception HTML simple</li>
+        <li>Pages statiques</li>
+        <li>Structure sémantique</li>
+      </ul>
+    </section>
+
+    <section id="galerie">
+      <h2>Galerie</h2>
+      <p>Images d'exemple (liens externes) :</p>
+      <figure>
+        <img src="https://placehold.co/600x400?text=Image+1" alt="Image 1" width="300" />
+        <figcaption>Image 1 — exemple</figcaption>
+      </figure>
+      <figure>
+        <img src="https://placehold.co/600x400?text=Image+2" alt="Image 2" width="300" />
+        <figcaption>Image 2 — exemple</figcaption>
+      </figure>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Formulaire d'exemple (ne fonctionne pas sans serveur) :</p>
+      <form method="post" action="#">
+        <label for="nom">Nom :</label><br />
+        <input type="text" id="nom" name="nom" /><br /><br />
+        <label for="email">Email :</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+        <label for="message">Message :</label><br />
+        <textarea id="message" name="message" rows="4"></textarea><br /><br />
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 — Site basique</p>
+  </footer>
+</body>
+</html>
