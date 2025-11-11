@@ -1,73 +1,199 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Site basique - Exemple</title>
+  <title>Konrad - Portfolio Cybersécurité</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <h1>Mon site basique</h1>
-    <p>Un exemple de site réalisé uniquement avec du HTML.</p>
-    <nav>
-      <a href="#accueil">Accueil</a> |
-      <a href="#apropos">À propos</a> |
-      <a href="#services">Services</a> |
-      <a href="#galerie">Galerie</a> |
-      <a href="#contact">Contact</a>
-    </nav>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#accueil" class="navbar-logo">K0NRD</a>
+      <button class="navbar-toggle" id="navbar-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <ul class="navbar-menu" id="navbar-menu">
+        <li><a href="#accueil" class="navbar-link"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#apropos" class="navbar-link"><i class="fas fa-user"></i> À propos</a></li>
+        <li><a href="#competences" class="navbar-link"><i class="fas fa-code"></i> Compétences</a></li>
+        <li><a href="#projets" class="navbar-link"><i class="fas fa-folder-open"></i> Projets</a></li>
+        <li><a href="#contact" class="navbar-link"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="accueil">
+    <div class="hero-content">
+      <h1 class="hero-title">Konrad</h1>
+      <p class="hero-subtitle">Étudiant en Cybersécurité chez Guardia Cybersecurity School</p>
+      <p class="hero-description">Passionné par la sécurité informatique, les CTF et le pentesting</p>
+      <a href="#projets" class="hero-btn">Découvrir mes projets</a>
+    </div>
   </header>
 
   <main>
-    <section id="accueil">
-      <h2>Accueil</h2>
-      <p>Bienvenue sur ce site simple construit uniquement en HTML. Utilisez la navigation pour explorer les sections.</p>
+    <section id="apropos" class="section section-light">
+      <div class="container">
+        <h2 class="section-title">À propos</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p>Étudiant passionné par la cybersécurité, je développerai cette partie plus tard</p>
+            <ul class="about-list">
+              <li><i class="fas fa-shield-alt"></i> Pentesting et audit de sécurité</li>
+              <li><i class="fas fa-flag"></i> Compétitions CTF (Capture The Flag)</li>
+              <li><i class="fas fa-network-wired"></i> Sécurité réseau et architecture</li>
+              <li><i class="fas fa-bug"></i> Reverse engineering et analyse de malware</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <i class="fas fa-trophy stat-icon"></i>
+              <h3>CTF</h3>
+              <p>Participations multiples</p>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-code stat-icon"></i>
+              <h3>Projets</h3>
+              <p>Sécurité & Dev</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="apropos">
-      <h2>À propos</h2>
-      <p>Ce site sert d'exemple minimaliste : structure sémantique, navigation par ancres et contenu statique.</p>
+    <section id="competences" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Compétences (en développement)</h2>
+        <!-- 
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-terminal skill-icon"></i>
+            <h3>Pentesting</h3>
+            <p>Tests d'intrusion, exploitation de vulnérabilités, audits de sécurité</p>
+            <div class="skill-tags">
+              <span class="tag">Metasploit</span>
+              <span class="tag">Burp Suite</span>
+              <span class="tag">Nmap</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-network-wired skill-icon"></i>
+            <h3>Sécurité Réseau</h3>
+            <p>Configuration de pare-feu, VLANs, DMZ, simulation avec GNS3</p>
+            <div class="skill-tags">
+              <span class="tag">GNS3</span>
+              <span class="tag">Cisco</span>
+              <span class="tag">Wireshark</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-lock skill-icon"></i>
+            <h3>Cryptographie</h3>
+            <p>Analyse de protocoles cryptographiques, attaques sur chiffrements</p>
+            <div class="skill-tags">
+              <span class="tag">Python</span>
+              <span class="tag">AES</span>
+              <span class="tag">RSA</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-search skill-icon"></i>
+            <h3>Reverse Engineering</h3>
+            <p>Analyse de binaires, décompilation, forensics</p>
+            <div class="skill-tags">
+              <span class="tag">Ghidra</span>
+              <span class="tag">IDA</span>
+              <span class="tag">GDB</span>
+            </div>
+          </div>
+        </div>
+
+        -->
+      </div>
     </section>
 
-    <section id="services">
-      <h2>Services</h2>
-      <ul>
-        <li>Conception HTML simple</li>
-        <li>Pages statiques</li>
-        <li>Structure sémantique</li>
-      </ul>
+    <section id="projets" class="section section-light">
+      <div class="container">
+        <h2 class="section-title">Projets Académiques</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="netcat.png" alt="Projet Sécurité ISR" />
+              <div class="project-overlay">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>Sécurité ISR</h3>
+              <p>Mise en place d'architectures sécurisées avec routeurs et switchs. Configuration de VLANs, ACLs et zones DMZ pour segmenter et protéger le réseau.</p>
+              <div class="project-tags">
+                <span class="tag">Packet Tracer</span>
+                <span class="tag">Stormshield</span>
+                <span class="tag">GNS3</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-image">
+              <img src="admin-cat.jpg" alt="Projet DevSecOps" />
+              <div class="project-overlay">
+                <i class="fas fa-code"></i>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3>DevSecOps</h3>
+              <p>Partie en développement...</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">Web</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="galerie">
-      <h2>Galerie</h2>
-      <p>Images d'exemple (liens externes) :</p>
-      <figure>
-        <img src="https://placehold.co/600x400?text=Image+1" alt="Image 1" width="300" />
-        <figcaption>Image 1 — exemple</figcaption>
-      </figure>
-      <figure>
-        <img src="https://placehold.co/600x400?text=Image+2" alt="Image 2" width="300" />
-        <figcaption>Image 2 — exemple</figcaption>
-      </figure>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Formulaire d'exemple (ne fonctionne pas sans serveur) :</p>
-      <form method="post" action="#">
-        <label for="nom">Nom :</label><br />
-        <input type="text" id="nom" name="nom" /><br /><br />
-        <label for="email">Email :</label><br />
-        <input type="email" id="email" name="email" /><br /><br />
-        <label for="message">Message :</label><br />
-        <textarea id="message" name="message" rows="4"></textarea><br /><br />
-        <button type="submit">Envoyer</button>
-      </form>
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-content">
+          <p class="contact-text">Intéressé par une collaboration ou souhaitez discuter de cybersécurité ?</p>
+          <div class="contact-links">
+            <a href="https://github.com/k0nrd" target="_blank" class="contact-btn">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="contact-btn">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:contact@konrad.dev" class="contact-btn anchor-contact-disable" disabled>
+              <i class="fas fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 — Site basique</p>
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Konrad — Tous droits réservés</p>
+      <div class="footer-icones">
+        <a href="https://github.com/k0nrd" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
